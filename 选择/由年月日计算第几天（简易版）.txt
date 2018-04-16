@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+	int y,m,d,days,all;
+	printf("Input a date(eg:2016.7.27):");
+	scanf("%d.%d.%d",&y,&m,&d);
+	switch (m)
+	{
+		case 1:days=0;break;
+		case 2:days=31;break;
+		case 3:days=59;break;
+		case 4:days=90;break;
+		case 5:days=121;break;
+		case 6:days=151;break;
+		case 7:days=182;break;
+		case 8:days=213;break;
+		case 9:days=243;break;
+		case 10:days=274;break;
+		case 11:days=304;break;
+		case 12:days=334;break;
+		default:printf("输入错误"); 
+	} 
+	printf("总共过了%d天",all=days+d);
+	return 0;
+}
